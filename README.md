@@ -41,6 +41,7 @@ cp -r skills/<skill-name> .claude/skills/<skill-name>
 | [pbcopy](skills/pbcopy/) | Copy text, HTML, or images to the macOS clipboard using `pbcopy` and `osascript` |
 | [awscli](skills/awscli/) | Manage AWS services using the AWS CLI (S3, EC2, IAM, Lambda, CloudFormation, ECS, and more) |
 | [tailscale-cli](skills/tailscale-cli/) | Manage Tailscale VPN using the `tailscale` CLI for networking, file sharing, and service exposure |
+| [gandi-cli](skills/gandi-cli/) | Manage Gandi.net domains, DNS records, certificates, and email using the `gandi` CLI |
 
 ## Creating a New Skill
 

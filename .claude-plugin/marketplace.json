@@ -26,7 +26,12 @@
       "name": "tailscale-cli",
       "path": "skills/tailscale-cli/SKILL.md",
       "description": "Manage Tailscale VPN using the tailscale CLI for networking, file sharing, and service exposure"
+    },
+    {
+      "name": "gandi-cli",
+      "path": "skills/gandi-cli/SKILL.md",
+      "description": "Manage Gandi.net domains, DNS records, certificates, and email using the gandi CLI"
     }
   ],
-  "tags": ["1password", "secrets", "password-manager", "security", "cli", "clipboard", "pbcopy", "macos", "aws", "awscli", "s3", "ec2", "lambda", "cloud", "tailscale", "vpn", "mesh-network"]
+  "tags": ["1password", "secrets", "password-manager", "security", "cli", "clipboard", "pbcopy", "macos", "aws", "awscli", "s3", "ec2", "lambda", "cloud", "tailscale", "vpn", "mesh-network", "gandi", "domain", "dns"]
 }

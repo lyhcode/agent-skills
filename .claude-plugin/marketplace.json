@@ -31,7 +31,12 @@
       "name": "gandi-cli",
       "path": "skills/gandi-cli/SKILL.md",
       "description": "Manage Gandi.net domains, DNS records, certificates, and email using the gandi CLI"
+    },
+    {
+      "name": "synology-cli",
+      "path": "skills/synology-cli/SKILL.md",
+      "description": "Manage Synology NAS via SSH using administrative CLI utilities (synouser, synogroup, synoshare, synonet, synoservice, synowin)"
     }
   ],
-  "tags": ["1password", "secrets", "password-manager", "security", "cli", "clipboard", "pbcopy", "macos", "aws", "awscli", "s3", "ec2", "lambda", "cloud", "tailscale", "vpn", "mesh-network", "gandi", "domain", "dns"]
+  "tags": ["1password", "secrets", "password-manager", "security", "cli", "clipboard", "pbcopy", "macos", "aws", "awscli", "s3", "ec2", "lambda", "cloud", "tailscale", "vpn", "mesh-network", "gandi", "domain", "dns", "synology", "nas", "diskstation", "dsm"]
 }

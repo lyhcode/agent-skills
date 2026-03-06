@@ -1,0 +1,17 @@
+{
+  "name": "lyhcode-agent-skills",
+  "display_name": "lyhcode Agent Skills",
+  "description": "A collection of agent skills by lyhcode.",
+  "version": "1.0.0",
+  "author": "lyhcode",
+  "repository": "https://github.com/lyhcode/agent-skills",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "1password-cli",
+      "path": "skills/1password-cli/SKILL.md",
+      "description": "Manage 1Password items, vaults, and secrets using the op CLI"
+    }
+  ],
+  "tags": ["1password", "secrets", "password-manager", "security", "cli"]
+}

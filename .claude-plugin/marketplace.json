@@ -11,7 +11,12 @@
       "name": "1password-cli",
       "path": "skills/1password-cli/SKILL.md",
       "description": "Manage 1Password items, vaults, and secrets using the op CLI"
+    },
+    {
+      "name": "pbcopy",
+      "path": "skills/pbcopy/SKILL.md",
+      "description": "Copy text to the macOS clipboard using pbcopy/pbpaste"
     }
   ],
-  "tags": ["1password", "secrets", "password-manager", "security", "cli"]
+  "tags": ["1password", "secrets", "password-manager", "security", "cli", "clipboard", "pbcopy", "macos"]
 }

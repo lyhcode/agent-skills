@@ -38,6 +38,7 @@ cp -r skills/<skill-name> .claude/skills/<skill-name>
 | Skill | Description |
 |-------|-------------|
 | [1password-cli](skills/1password-cli/) | Manage 1Password items, vaults, and secrets using the `op` CLI |
+| [pbcopy](skills/pbcopy/) | Copy text to the macOS clipboard using `pbcopy`/`pbpaste` |
 
 ## Creating a New Skill
 

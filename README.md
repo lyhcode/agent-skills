@@ -38,7 +38,8 @@ cp -r skills/<skill-name> .claude/skills/<skill-name>
 | Skill | Description |
 |-------|-------------|
 | [1password-cli](skills/1password-cli/) | Manage 1Password items, vaults, and secrets using the `op` CLI |
-| [pbcopy](skills/pbcopy/) | Copy text to the macOS clipboard using `pbcopy`/`pbpaste` |
+| [pbcopy](skills/pbcopy/) | Copy text, HTML, or images to the macOS clipboard using `pbcopy` and `osascript` |
+| [awscli](skills/awscli/) | Manage AWS services using the AWS CLI (S3, EC2, IAM, Lambda, CloudFormation, ECS, and more) |
 
 ## Creating a New Skill
 

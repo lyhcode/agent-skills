@@ -15,8 +15,13 @@
     {
       "name": "pbcopy",
       "path": "skills/pbcopy/SKILL.md",
-      "description": "Copy text to the macOS clipboard using pbcopy/pbpaste"
+      "description": "Copy text, HTML, or images to the macOS clipboard using pbcopy and osascript"
+    },
+    {
+      "name": "awscli",
+      "path": "skills/awscli/SKILL.md",
+      "description": "Manage AWS services using the AWS CLI including S3, EC2, IAM, Lambda, and more"
     }
   ],
-  "tags": ["1password", "secrets", "password-manager", "security", "cli", "clipboard", "pbcopy", "macos"]
+  "tags": ["1password", "secrets", "password-manager", "security", "cli", "clipboard", "pbcopy", "macos", "aws", "awscli", "s3", "ec2", "lambda", "cloud"]
 }

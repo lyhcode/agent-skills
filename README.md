@@ -40,6 +40,7 @@ cp -r skills/<skill-name> .claude/skills/<skill-name>
 | [1password-cli](skills/1password-cli/) | Manage 1Password items, vaults, and secrets using the `op` CLI |
 | [pbcopy](skills/pbcopy/) | Copy text, HTML, or images to the macOS clipboard using `pbcopy` and `osascript` |
 | [awscli](skills/awscli/) | Manage AWS services using the AWS CLI (S3, EC2, IAM, Lambda, CloudFormation, ECS, and more) |
+| [tailscale-cli](skills/tailscale-cli/) | Manage Tailscale VPN using the `tailscale` CLI for networking, file sharing, and service exposure |
 
 ## Creating a New Skill
 

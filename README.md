@@ -1,10 +1,21 @@
 # Agent Skills
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A collection of agent skills by lyhcode, following the [Agent Skills specification](https://agentskills.io).
 
-## Usage
+## Skills
 
-Agent Skills 可在不同平台使用，各平台安裝方式不同：
+| Skill | Description | Requires |
+|-------|-------------|----------|
+| [1password-cli](skills/1password-cli/) | Manage 1Password items, vaults, and secrets using the `op` CLI | [`op`](https://developer.1password.com/docs/cli/) |
+| [awscli](skills/awscli/) | Manage AWS services using the AWS CLI (S3, EC2, IAM, Lambda, CloudFormation, ECS, and more) | [`aws`](https://aws.amazon.com/cli/) |
+| [gandi-cli](skills/gandi-cli/) | Manage Gandi.net domains, DNS records, certificates, and email using the `gandi` CLI | [`gandi`](https://cli.gandi.net/) |
+| [pbcopy](skills/pbcopy/) | Copy text, HTML, or images to the macOS clipboard using `pbcopy` and `osascript` | macOS |
+| [synology-cli](skills/synology-cli/) | Manage Synology NAS via SSH using administrative CLI utilities (`synouser`, `synogroup`, `synoshare`, `synonet`, `synoservice`, `synowin`) | SSH access to DSM |
+| [tailscale-cli](skills/tailscale-cli/) | Manage Tailscale VPN using the `tailscale` CLI for networking, file sharing, and service exposure | [`tailscale`](https://tailscale.com/download) |
+
+## Usage
 
 ### Claude Code (Plugin)
 
@@ -15,43 +26,32 @@ Agent Skills 可在不同平台使用，各平台安裝方式不同：
 
 ### Claude Code (Manual)
 
-將 skill 目錄複製到個人或專案的 skills 資料夾：
+Copy a skill directory to your personal or project skills folder:
 
 ```bash
-# 個人（所有專案可用）
+# Personal (available to all projects)
 cp -r skills/<skill-name> ~/.claude/skills/<skill-name>
 
-# 專案（僅該專案可用）
+# Project (available to this project only)
 cp -r skills/<skill-name> .claude/skills/<skill-name>
 ```
 
 ### Claude.ai
 
-將 skill 目錄打包為 zip，到 Settings > Features 上傳。僅限個人使用，不會跨組織同步。
+Zip the skill directory and upload it via Settings > Features. Personal use only; not synced across organizations.
 
 ### Claude API
 
-透過 Skills API (`/v1/skills`) 上傳，workspace 內所有成員可用。
+Upload via the Skills API (`/v1/skills`). Available to all workspace members.
 
-## Skills
+## Contributing
 
-| Skill | Description |
-|-------|-------------|
-| [1password-cli](skills/1password-cli/) | Manage 1Password items, vaults, and secrets using the `op` CLI |
-| [pbcopy](skills/pbcopy/) | Copy text, HTML, or images to the macOS clipboard using `pbcopy` and `osascript` |
-| [awscli](skills/awscli/) | Manage AWS services using the AWS CLI (S3, EC2, IAM, Lambda, CloudFormation, ECS, and more) |
-| [tailscale-cli](skills/tailscale-cli/) | Manage Tailscale VPN using the `tailscale` CLI for networking, file sharing, and service exposure |
-| [gandi-cli](skills/gandi-cli/) | Manage Gandi.net domains, DNS records, certificates, and email using the `gandi` CLI |
-| [synology-cli](skills/synology-cli/) | Manage Synology NAS via SSH using administrative CLI utilities (`synouser`, `synogroup`, `synoshare`, `synonet`, `synoservice`, `synowin`) |
-
-## Creating a New Skill
-
-1. 複製 `template/SKILL.md` 到 `skills/<skill-name>/SKILL.md`
-2. 編輯 frontmatter — `name`（必填，最多 64 字元，小寫字母/數字/連字號）和 `description`（必填，最多 1024 字元）
-3. 撰寫指令內容（建議 < 5k tokens）
-4. 如需更多資料，加入附屬檔案（`scripts/`、`reference/`），並在 SKILL.md 中引用
-5. 更新 `.claude-plugin/marketplace.json` 註冊 skill
-6. 更新本 README 的 skill 列表
+1. Copy `template/SKILL.md` to `skills/<skill-name>/SKILL.md`
+2. Edit frontmatter — `name` (required, max 64 chars, lowercase letters/numbers/hyphens) and `description` (required, max 1024 chars)
+3. Write instructions (recommended < 5k tokens)
+4. Add supporting files (`scripts/`, `reference/`) if needed, and reference them in SKILL.md
+5. Register the skill in `.claude-plugin/marketplace.json`
+6. Add the skill to the table in this README
 
 ## License
 

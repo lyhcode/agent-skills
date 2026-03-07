@@ -13,19 +13,9 @@
       "description": "Manage 1Password items, vaults, and secrets using the op CLI"
     },
     {
-      "name": "pbcopy",
-      "path": "skills/pbcopy/SKILL.md",
-      "description": "Copy text, HTML, or images to the macOS clipboard using pbcopy and osascript"
-    },
-    {
       "name": "awscli",
       "path": "skills/awscli/SKILL.md",
       "description": "Manage AWS services using the AWS CLI including S3, EC2, IAM, Lambda, and more"
-    },
-    {
-      "name": "tailscale-cli",
-      "path": "skills/tailscale-cli/SKILL.md",
-      "description": "Manage Tailscale VPN using the tailscale CLI for networking, file sharing, and service exposure"
     },
     {
       "name": "gandi-cli",
@@ -33,10 +23,20 @@
       "description": "Manage Gandi.net domains, DNS records, certificates, and email using the gandi CLI"
     },
     {
+      "name": "pbcopy",
+      "path": "skills/pbcopy/SKILL.md",
+      "description": "Copy text, HTML, or images to the macOS clipboard using pbcopy and osascript"
+    },
+    {
       "name": "synology-cli",
       "path": "skills/synology-cli/SKILL.md",
       "description": "Manage Synology NAS via SSH using administrative CLI utilities (synouser, synogroup, synoshare, synonet, synoservice, synowin)"
+    },
+    {
+      "name": "tailscale-cli",
+      "path": "skills/tailscale-cli/SKILL.md",
+      "description": "Manage Tailscale VPN using the tailscale CLI for networking, file sharing, and service exposure"
     }
   ],
-  "tags": ["1password", "secrets", "password-manager", "security", "cli", "clipboard", "pbcopy", "macos", "aws", "awscli", "s3", "ec2", "lambda", "cloud", "tailscale", "vpn", "mesh-network", "gandi", "domain", "dns", "synology", "nas", "diskstation", "dsm"]
+  "tags": ["1password", "aws", "awscli", "cli", "clipboard", "cloud", "diskstation", "dns", "domain", "dsm", "ec2", "gandi", "lambda", "macos", "mesh-network", "nas", "password-manager", "pbcopy", "s3", "secrets", "security", "synology", "tailscale", "vpn"]
 }

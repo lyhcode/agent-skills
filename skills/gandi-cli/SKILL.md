@@ -11,7 +11,7 @@ description: >
 
 Help users manage Gandi.net services using the `gandi` CLI.
 
-Source: https://github.com/lyhcode/gandi-cli
+Source: https://github.com/lyhcode/agent-gandi-cli
 
 ## Prerequisites
 
@@ -23,13 +23,13 @@ Source: https://github.com/lyhcode/gandi-cli
 Run directly with `uvx` (no install needed):
 
 ```bash
-uvx --from git+https://github.com/lyhcode/gandi-cli gandi <command>
+uvx agent-gandi-cli gandi <command>
 ```
 
 Or install globally:
 
 ```bash
-pip install git+https://github.com/lyhcode/gandi-cli
+pip install agent-gandi-cli
 gandi <command>
 ```
 
@@ -126,12 +126,21 @@ gandi dns export example.com
 |------|---------------|-------------|
 | `A` | `1.2.3.4` | IPv4 address |
 | `AAAA` | `2001:db8::1` | IPv6 address |
+| `ALIAS` | `alias.example.com.` | Alias for bare domain (like CNAME on @) |
 | `CNAME` | `alias.example.com.` | Canonical name (trailing dot) |
 | `MX` | `10 mail.example.com.` | Mail exchange (priority + host) |
 | `TXT` | `"v=spf1 ..."` | Text record (SPF, DKIM, verification) |
 | `NS` | `ns1.example.com.` | Nameserver |
 | `SRV` | `10 5 5060 sip.example.com.` | Service record |
 | `CAA` | `0 issue "letsencrypt.org"` | Certificate authority authorization |
+
+All supported types: A, AAAA, ALIAS, CAA, CDS, CNAME, DNAME, DS, HTTPS, KEY, LOC, MX, NAPTR, NS, OPENPGPKEY, PTR, RP, SOA, SPF, SRV, SSHFP, SVCB, TLSA, TXT, WKS
+
+### Important Constraints
+
+- **ALIAS + DNSSEC**: ALIAS records on bare domain (`@`) will break DNSSEC — avoid combining them
+- **CNAME exclusivity**: CNAME cannot coexist with other record types on the same name
+- **Email forwards**: Max 100 creations/updates per week per domain (HTTP 429 on exceed)
 
 ## Certificate Management
 

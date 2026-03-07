@@ -302,3 +302,4 @@ Run `op item template list` for all available categories. Common ones:
 5. **Delete resolved config files** after use
 
 For complete command reference, see [reference/commands.md](reference/commands.md).
+For naming conventions, field types, vault organization, and best practices checklist, see [reference/conventions.md](reference/conventions.md).

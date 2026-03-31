@@ -41,7 +41,12 @@
       "name": "tailscale-cli",
       "path": "skills/tailscale-cli/SKILL.md",
       "description": "Manage Tailscale VPN using the tailscale CLI for networking, file sharing, and service exposure"
+    },
+    {
+      "name": "textual-tui",
+      "path": "skills/textual-tui/SKILL.md",
+      "description": "Build terminal user interfaces (TUI) with the Python Textual framework including widgets, CSS styling, events, screens, and async workers"
     }
   ],
-  "tags": ["1password", "aws", "awscli", "cli", "clipboard", "cloud", "diskstation", "dns", "domain", "dsm", "ec2", "file-sync", "gandi", "lambda", "macos", "mesh-network", "nas", "p2p", "password-manager", "pbcopy", "s3", "secrets", "security", "syncthing", "synology", "tailscale", "vpn"]
+  "tags": ["1password", "aws", "awscli", "cli", "clipboard", "cloud", "diskstation", "dns", "domain", "dsm", "ec2", "file-sync", "gandi", "lambda", "macos", "mesh-network", "nas", "p2p", "password-manager", "pbcopy", "python", "s3", "secrets", "security", "syncthing", "synology", "tailscale", "terminal", "textual", "tui", "vpn"]
 }

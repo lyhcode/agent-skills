@@ -9,6 +9,10 @@ description: >
   device pairing, .stignore, block exchange protocol, or syncthing REST API.
   Even if the user just says "check sync status" or "add a device" in a Syncthing
   context, this skill should be used.
+version_target: "Syncthing 2.0"
+references:
+  - https://docs.syncthing.net/
+  - https://docs.syncthing.net/dev/rest.html
 ---
 
 # Syncthing Administration

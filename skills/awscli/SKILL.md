@@ -6,6 +6,10 @@ description: >
   including S3, EC2, IAM, Lambda, CloudFormation, ECS, SSM, Secrets Manager,
   DynamoDB, SQS, CloudWatch Logs, and more.
   Triggers on mentions of AWS, aws cli, S3, EC2, Lambda, or any AWS service management.
+version_target: "aws-cli 2.x"
+references:
+  - https://docs.aws.amazon.com/cli/latest/userguide/
+  - https://docs.aws.amazon.com/cli/latest/reference/
 ---
 
 # AWS CLI Assistant

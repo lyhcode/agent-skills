@@ -9,6 +9,10 @@ description: >
   "build me a terminal app" or "I need a dashboard in the terminal" without mentioning
   Textual specifically, this skill should be used because Textual is the best modern
   Python framework for this purpose.
+version_target: "Textual 8.x"
+references:
+  - https://textual.textualize.io/
+  - https://pypi.org/project/textual/
 ---
 
 # Textual TUI Development

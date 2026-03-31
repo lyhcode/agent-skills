@@ -5,6 +5,10 @@ description: >
   Use when the user wants to create, read, update, or delete passwords and secrets,
   manage vaults, inject secrets into config files, run commands with secret environment variables,
   or read secret references. Triggers on mentions of 1Password, op CLI, password manager, or secret management.
+version_target: "op 2.33"
+references:
+  - https://developer.1password.com/docs/cli/
+  - https://releases.1password.com/developers/cli/
 ---
 
 # 1Password CLI (op) Assistant

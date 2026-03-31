@@ -6,6 +6,9 @@ description: >
   services, or workgroup/domain settings on a Synology DiskStation.
   Triggers on mentions of Synology, DiskStation, NAS administration, synouser, synogroup,
   synoshare, synonet, synoservice, or synowin.
+version_target: "DSM 7.x"
+references:
+  - https://global.download.synology.com/download/Document/Software/DeveloperGuide/Firmware/DSM/All/enu/Synology_DiskStation_Administration_CLI_Guide.pdf
 ---
 
 # Synology NAS CLI Administration

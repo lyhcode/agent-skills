@@ -6,6 +6,10 @@ description: >
   share files via Taildrop, expose services with Tailscale Serve or Funnel,
   check network status, manage Tailnet Lock, or configure Tailscale settings.
   Triggers on mentions of Tailscale, tailnet, MagicDNS, Taildrop, or mesh VPN.
+version_target: "Tailscale 1.96"
+references:
+  - https://tailscale.com/docs/reference/tailscale-cli
+  - https://tailscale.com/changelog
 ---
 
 # Tailscale CLI Assistant

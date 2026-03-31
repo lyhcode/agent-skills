@@ -17,34 +17,31 @@ A collection of agent skills by lyhcode, following the [Agent Skills specificati
 | [tailscale-cli](skills/tailscale-cli/) | Manage Tailscale VPN using the `tailscale` CLI for networking, file sharing, and service exposure | [`tailscale`](https://tailscale.com/download) |
 | [textual-tui](skills/textual-tui/) | Build terminal user interfaces (TUI) with the Python Textual framework | Python 3.9+, [`textual`](https://textual.textualize.io/) |
 
-## Usage
+## Installation
 
-### Claude Code (Plugin)
+### npx skills (Recommended)
 
-```
-/plugin marketplace add lyhcode/agent-skills
-/plugin install <skill-name>@lyhcode-agent-skills
-```
-
-### Claude Code (Manual)
-
-Copy a skill directory to your personal or project skills folder:
+Install skills using the [`skills`](https://github.com/vercel-labs/skills) CLI, which supports Claude Code, Cursor, Codex, Gemini CLI, and more:
 
 ```bash
-# Personal (available to all projects)
-cp -r skills/<skill-name> ~/.claude/skills/<skill-name>
+# Install all skills (interactive selection)
+npx skills add lyhcode/agent-skills
 
-# Project (available to this project only)
-cp -r skills/<skill-name> .claude/skills/<skill-name>
+# Install a specific skill
+npx skills add lyhcode/agent-skills@pbcopy
 ```
 
-### Claude.ai
+### Manual
 
-Zip the skill directory and upload it via Settings > Features. Personal use only; not synced across organizations.
+Copy a skill directory to your agent's skills folder:
 
-### Claude API
+```bash
+# Claude Code (personal, available to all projects)
+cp -r skills/<skill-name> ~/.claude/skills/<skill-name>
 
-Upload via the Skills API (`/v1/skills`). Available to all workspace members.
+# Claude Code (project scope)
+cp -r skills/<skill-name> .claude/skills/<skill-name>
+```
 
 ## Contributing
 

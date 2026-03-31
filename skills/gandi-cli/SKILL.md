@@ -5,6 +5,11 @@ description: >
   Use when the user wants to manage domain names, LiveDNS records, SSL certificates,
   email forwarding, mailboxes, or organizations on Gandi.net.
   Triggers on mentions of Gandi, domain management, DNS records, or gandi-cli.
+version_target: "agent-gandi-cli 0.1"
+references:
+  - https://github.com/lyhcode/agent-gandi-cli
+  - https://api.gandi.net/docs/
+  - https://api.gandi.net/docs/livedns/
 ---
 
 # Gandi CLI Assistant

@@ -6,6 +6,10 @@ description: >
   or when generating output that the user will need to paste elsewhere
   (e.g., commands, code snippets, config blocks, URLs, tokens, images, rich text).
   Triggers on mentions of copy, clipboard, paste, pbcopy, or "copy to clipboard".
+version_target: "macOS 15 (Sequoia)"
+references:
+  - https://ss64.com/mac/pbcopy.html
+  - https://ss64.com/mac/pbpaste.html
 ---
 
 # Clipboard (pbcopy/pbpaste/osascript)

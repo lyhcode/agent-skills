@@ -28,6 +28,11 @@
       "description": "Copy text, HTML, or images to the macOS clipboard using pbcopy and osascript"
     },
     {
+      "name": "syncthing",
+      "path": "skills/syncthing/SKILL.md",
+      "description": "Manage Syncthing file synchronization via the REST API and CLI for device pairing, folder management, sync status, versioning, and troubleshooting"
+    },
+    {
       "name": "synology-cli",
       "path": "skills/synology-cli/SKILL.md",
       "description": "Manage Synology NAS via SSH using administrative CLI utilities (synouser, synogroup, synoshare, synonet, synoservice, synowin)"
@@ -38,5 +43,5 @@
       "description": "Manage Tailscale VPN using the tailscale CLI for networking, file sharing, and service exposure"
     }
   ],
-  "tags": ["1password", "aws", "awscli", "cli", "clipboard", "cloud", "diskstation", "dns", "domain", "dsm", "ec2", "gandi", "lambda", "macos", "mesh-network", "nas", "password-manager", "pbcopy", "s3", "secrets", "security", "synology", "tailscale", "vpn"]
+  "tags": ["1password", "aws", "awscli", "cli", "clipboard", "cloud", "diskstation", "dns", "domain", "dsm", "ec2", "file-sync", "gandi", "lambda", "macos", "mesh-network", "nas", "p2p", "password-manager", "pbcopy", "s3", "secrets", "security", "syncthing", "synology", "tailscale", "vpn"]
 }

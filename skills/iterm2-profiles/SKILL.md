@@ -35,7 +35,7 @@ Each file contains a `Profiles` array:
         "Alpha Component": 1,
         "Color Space": "sRGB"
       },
-      "Normal Font": "MesloLGS-NF-Regular 13"
+      "Normal Font": "MesloLGS-NF-Regular 15"
     }
   ]
 }

@@ -56,7 +56,7 @@ For light/dark mode variants, append ` (Dark)` or ` (Light)` to the key name.
 
 | Key | Format | Example |
 |-----|--------|---------|
-| `Normal Font` | "FontName Size" | `"MesloLGS-NF-Regular 13"` |
+| `Normal Font` | "FontName Size" | `"MesloLGS-NF-Regular 15"` |
 | `Non Ascii Font` | "FontName Size" | `"Monaco 12"` |
 | `ASCII Anti Aliased` | Boolean (1/0) | `1` |
 | `Use Bold Font` | Boolean | `1` |

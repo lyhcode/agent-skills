@@ -198,6 +198,28 @@ echo 'GANDI_PAT=op://Private/gandi-production-pat/credential' > .env
 op run --env-file=.env -- gandi domain list
 ```
 
+## Markdown in Notes
+
+1Password supports a limited subset of Markdown in notes fields. When writing `notesPlain` content, only use these elements:
+
+| Element | Syntax |
+|---------|--------|
+| Headings | `#`, `##`, `###` |
+| Bold | `**text**` |
+| Italic | `_text_` or `*text*` |
+| Strikethrough | `~~text~~` |
+| Dividing line | `---` (needs blank lines above and below) |
+| Bulleted list | `* item` or `- item` or `+ item` |
+| Numbered list | `1. item` |
+| Quotation | `> text` |
+| Inline code | `` `code` `` |
+| Code block | ` ``` ` or indent 4+ spaces |
+| Links | `https://...` URLs auto-link (no `[text](url)` syntax) |
+
+**Not supported:** tables, images, `[text](url)` link syntax, nested formatting, HTML.
+
+To use a literal Markdown character, escape it with backslash: `\*`, `\#`, `\_`.
+
 ## Checklist
 
 - [ ] Correct category chosen (Login vs API Credential vs Server vs Database)

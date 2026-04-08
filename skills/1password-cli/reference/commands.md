@@ -294,6 +294,54 @@ File attachment attributes: `content`, `size`, `id`, `name`, `type`
 
 API Credential, Bank Account, Credit Card, Database, Document, Driver License, Email Account, Identity, Login, Membership, Outdoor License, Passport, Password, Reward Program, Secure Note, Server, Social Security Number, Software License, Wireless Router
 
+## Tips and Gotchas
+
+### Shell expansion with op run
+
+The shell expands `$VAR` *before* `op run` processes it. To defer expansion, use a subshell:
+
+```bash
+# WRONG — shell expands $MY_VAR immediately
+MY_VAR=op://vault/item/field op run --no-masking -- echo "$MY_VAR"
+
+# CORRECT — subshell defers expansion
+MY_VAR=op://vault/item/field op run --no-masking -- sh -c 'echo "$MY_VAR"'
+```
+
+### Environment differentiation
+
+Organize vaults by environment (dev/staging/prod) with the same item structure, then use a shell variable to switch:
+
+```bash
+# In your .env file:
+DB_PASSWORD="op://$APP_ENV/mysql/password"
+
+# Switch environment at runtime:
+APP_ENV=prod op run --env-file="./app.env" -- ./deploy.sh
+APP_ENV=dev  op run --env-file="./app.env" -- ./deploy.sh
+
+# Also works with op inject:
+APP_ENV=prod op inject -i config.yml.tpl -o config.yml
+```
+
+### JSON template workflow for sensitive values
+
+Command-line arguments can appear in `ps` output. For items with sensitive values, use JSON templates:
+
+```bash
+# Create: get a blank template, edit it, create the item, clean up
+op item template get --out-file=/tmp/login.json "Login"
+# edit /tmp/login.json with your values
+op item create --template=/tmp/login.json
+rm /tmp/login.json
+
+# Edit: export current item, modify, apply, clean up
+op item get <title-or-id> --format json > /tmp/item.json
+# edit /tmp/item.json
+op item edit <title-or-id> --template=/tmp/item.json
+rm /tmp/item.json
+```
+
 ## Environment File (.env) Syntax
 
 - `KEY=VALUE` statements separated by newlines
